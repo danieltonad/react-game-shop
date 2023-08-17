@@ -1,0 +1,90 @@
+.cards {
+  position: relative;
+  overflow: hidden;
+  width: 25rem;
+  height: 14rem;
+  background-color: rgb(73, 216, 126);
+  margin-bottom: 2rem;
+  & .controller-img {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -0.5rem;
+    #controller-img {
+      width: 130px;
+      height: 107px;
+    }
+  }
+  & .card-disable{
+    position: absolute;
+    z-index: 10;
+    width: 25rem;
+    height: 14rem;
+    background-color: rgb(73, 216, 126);
+    opacity: .7;
+  }
+  .cards-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .card-img{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 14rem;
+        #card-img{
+            width: 125px;
+            height: 11rem;
+            box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+        }
+    }
+    .cards-content-right{
+        width: 60%;
+        height: 11rem;
+        margin: auto 0;
+        z-index: 2;
+        .card-title{
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: .75rem 0;
+        }
+        .card-text{
+            font-weight: 200;
+            font-size: .85rem;
+            word-spacing: .2rem;
+            color: rgb(47, 72, 53);
+            height: 2rem;
+            width: 95%;
+        }
+        .card-price{
+            margin: 1.5rem 0;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            #coins-img{
+                margin-right: .5rem;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .card-button{
+            button{
+                background: #000;
+                color: white;
+                font-size: .85rem;
+                width: 9rem;
+                height: 2rem;
+                border-radius: 4rem;
+                border: none;
+                margin-top: -.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+  &:nth-child(2), &:nth-child(4){
+    margin-left: 2rem;
+  }
+}

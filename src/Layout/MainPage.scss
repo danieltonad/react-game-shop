@@ -1,0 +1,54 @@
+.mainPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  & > .left {
+    width: 75vw;
+    height: 100vh;
+    & > .header {
+      height: 4vh;
+      background: #000;
+    }
+  }
+  & .mainTop {
+    height: 42vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(45, 41, 41, 0.451), rgba(22, 21, 21, 0.9)), url("/assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160%;
+    width: 100%;
+    & .main-logo{
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 85%;
+        #main-logo {
+          width: 240px;
+          height:40px;
+        }
+    }
+  }
+  & .mainBottom {
+    height: 55vh;
+    background-color: black;
+    position: relative;
+    .cards-pannel{
+        position: absolute;
+        height: 60vh; //80vh
+        width: 100%;
+        background-color: transparent;
+        top: -20vh;
+        padding: 0 7.5%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+  }
+  & .right {
+    height: 100vh;
+    width: 25%;
+    background-color: rgb(73, 216, 126);
+  }
+}
